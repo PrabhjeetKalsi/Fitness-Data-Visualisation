@@ -1,4 +1,5 @@
 const ctx = document.getElementById("chart1");
+const ctx2 = document.getElementById("chart2");
 const config = {
   type: "line",
   data: {
@@ -60,3 +61,4 @@ const config = {
   },
 };
 new Chart(ctx, config);
+new Chart(ctx2, config);
