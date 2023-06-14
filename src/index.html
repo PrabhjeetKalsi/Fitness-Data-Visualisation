@@ -18,30 +18,39 @@
 <body>
     <nav class="navbar navbar-custom">
         <div class="container-fluid justify-content-center">
-            <span class="navbar-brand mb-0 h1">Fitness Tracker</span>
+            <span class="navbar-brand mb-1 h1">Fitness Tracker</span>
         </div>
     </nav>
 
-    <div class="container-sm">
+    <div class="container-sm mt-3">
         <div class="row">
+            <div class="col"></div>
             <div class="col">
-
+                <form>
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select Exercise</option>
+                            <option value="1">Dumbell Press</option>
+                            <option value="2">Leg Press</option>
+                            <option value="3">Bicep curl</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Weight(Kg)</label>
+                        <input type="number" class="form-control" id="weight">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Repititions(#)</label>
+                        <input type="number" class="form-control" id="reps">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Date</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                </form>
             </div>
-            <div class="col">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Select Exercise</option>
-                    <option value="1">Dumbell Press</option>
-                    <option value="2">Leg Press</option>
-                    <option value="3">Bicep curl</option>
-                </select>
-                <label class="form-label">Weight(Kg)</label>
-                <input type="number" class="form-control" id="weight">
-                <label class="form-label">Repititions(#)</label>
-                <input type="number" class="form-control" id="reps">
-            </div>
-            <div class="col">
-
-            </div>
+            <div class="col"></div>
         </div>
 
     </div>
