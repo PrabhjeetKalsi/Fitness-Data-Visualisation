@@ -26,26 +26,26 @@
         <div class="row">
             <div class="col"></div>
             <div class="col">
-                <form>
+                <form id="data-form">
                     <div class="mb-3">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Select Exercise</option>
-                            <option value="1">Dumbell Press</option>
-                            <option value="2">Leg Press</option>
-                            <option value="3">Bicep curl</option>
+                        <select class="form-select" aria-label="Default select example" id="exercise" required>
+                            <option selected value="">Select Exercise</option>
+                            <option value="Dumbell Press">Dumbell Press</option>
+                            <option value="Leg Press">Leg Press</option>
+                            <option value="Bicep Curl">Bicep Curl</option>
                         </select>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Weight(Kg)</label>
-                        <input type="number" class="form-control" id="weight">
+                        <input type="number" class="form-control" id="weight" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Repititions(#)</label>
-                        <input type="number" class="form-control" id="reps">
+                        <input type="number" class="form-control" id="reps" required>
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Date</label>
-                        <input type="date" class="form-control" id="date">
+                        <input type="date" class="form-control" id="date" required>
                     </div>
                     <button type="submit" class="btn btn-primary" id="submit">Submit</button>
                 </form>
@@ -65,7 +65,7 @@
             </div>
         </div>
     </div>
-    <script src="./charts.js"></script>
+    <script type="module" src="./charts.js"></script>
 </body>
 
 </html>
