@@ -9,13 +9,13 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/index.html"));
 });
 
-app.get("/src/charts.js", (req, res) => {
+app.get("/charts.js", (req, res) => {
   res.sendFile(path.join(__dirname + "/charts.js"));
 });
-app.get("/src/utils.js", (req, res) => {
+app.get("/utils.js", (req, res) => {
   res.sendFile(path.join(__dirname + "/utils.js"));
 });
-app.get("/src/data.js", (req, res) => {
+app.get("/data.js", (req, res) => {
   res.sendFile(path.join(__dirname + "/data.js"));
 });
 
