@@ -1,5 +1,4 @@
 //experimental file for post req handling
-//needs fixing
 const axios = require("axios");
 
 const data = {
