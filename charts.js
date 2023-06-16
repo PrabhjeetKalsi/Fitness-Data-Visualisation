@@ -15,4 +15,13 @@ form.addEventListener("submit", (e) => {
   let reps = document.getElementById("reps").value;
   let date = document.getElementById("date").value;
   addData(chart1, formatDate(date), reps, weight);
+
+  axios
+    .post("http://localhost:3000/data", { exercise, weight, reps, date })
+    .then((response) => {
+      console.log("Response:", response.data);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
 });

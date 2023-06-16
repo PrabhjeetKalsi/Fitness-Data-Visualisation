@@ -22,7 +22,6 @@ app.get("/data.js", (req, res) => {
   res.sendFile(path.join(__dirname + "/data.js"));
 });
 
-//experimental post request handling
 app.post("/data", (req, res) => {
   const data = req.body;
   console.log("Received data:", data);
