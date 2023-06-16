@@ -6,3 +6,10 @@ export function formatDate(date) {
 
   return formattedDate;
 }
+
+export function addData(chart, date, reps, weight) {
+  chart.data.labels.push(date);
+  chart.data.datasets[0].data.push(reps);
+  chart.data.datasets[1].data.push(weight);
+  chart.update();
+}

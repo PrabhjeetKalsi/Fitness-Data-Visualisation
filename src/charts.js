@@ -1,17 +1,18 @@
-import { formatDate } from "./utils.js";
-import { dateLabels, config } from "./data.js";
+import { formatDate, addData } from "./utils.js";
+import { config } from "./data.js";
+
+const ctx = document.getElementById("chart1");
+const ctx2 = document.getElementById("chart2");
+
+let chart1 = new Chart(ctx, config);
+let chart2 = new Chart(ctx2, config);
 
 let form = document.getElementById("data-form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  let exercise = document.getElementById("exercise");
-  let weight = document.getElementById("weight");
-  let reps = document.getElementById("reps");
-  let date = document.getElementById("date");
-  console.log(exercise.value, weight.value, reps.value, formatDate(date.value));
+  let exercise = document.getElementById("exercise").value;
+  let weight = document.getElementById("weight").value;
+  let reps = document.getElementById("reps").value;
+  let date = document.getElementById("date").value;
+  addData(chart1, formatDate(date), reps, weight);
 });
-const ctx = document.getElementById("chart1");
-const ctx2 = document.getElementById("chart2");
-
-new Chart(ctx, config);
-new Chart(ctx2, config);

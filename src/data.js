@@ -1,4 +1,5 @@
-export let dateLabels = [
+//Intial Mock Data
+let dateLabels = [
   "Jun 10, 2023",
   "Jun 11, 2023",
   "Jun 12, 2023",
@@ -6,6 +7,8 @@ export let dateLabels = [
   "Jun 14, 2023",
   "Jun 15, 2023",
 ];
+let legPressReps = [6, 7, 7, 8, 10, 11];
+let legPressWeight = [70, 85, 100, 100, 130, 130];
 
 export let config = {
   type: "line",
@@ -15,13 +18,13 @@ export let config = {
       {
         yAxisID: "left",
         label: "# of Reps",
-        data: [6, 7, 7, 8, 10, 11],
+        data: legPressReps,
         borderWidth: 1,
       },
       {
         yAxisID: "right",
         label: "Weight",
-        data: [70, 85, 100, 100, 130, 130],
+        data: legPressWeight,
         borderWidth: 1,
       },
     ],
